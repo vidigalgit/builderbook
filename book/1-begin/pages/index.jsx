@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Button from '@mui/material/Button';
 
+
 const Index = () => (
   <div style={{ padding: '10px 45px' }}>
     <Head>
