@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -66,5 +67,6 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'no-console': 'off',
   },
 };
