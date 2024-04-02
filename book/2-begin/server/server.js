@@ -12,14 +12,15 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
     const server = express();
   
-    server.get('/', (req, res) => {
-      res.send('My express server');
-    });
+   server.get('/', (req, res) => {
+      const user = JSON.stringify({email:'vidigal@gmail.com'});
+      app.render(req,res, '/',{user});
+   });
   
     server.get('*', (req, res) => handle(req, res));
   
     server.listen(port, (err) => {
       if (err) throw err;
-      console.log(`> Ready on ${ROOT_URL}`);
+      console.log(`> Ready on ${ROOT_URL}`); // eslint-disable-line no-console
     });
   });
