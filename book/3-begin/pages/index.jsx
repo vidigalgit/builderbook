@@ -1,6 +1,9 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from 'prop-types';
-
 import Head from 'next/head';
+
+
+
 
 const propTypes = {
   user: PropTypes.shape({
